@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet - KutuDünyası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">KutuDünyası</a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="sepet.html" class="aktif">Sepet (<span id="sepet-sayisi">0</span>)</a></li>
+        </ul>
+        <button class="hamburger">&#9776;</button>
+    </nav>
+
+    <div class="sayfa-baslik">
+        <h1>Alışveriş Sepeti</h1>
+    </div>
+
+    <section>
+        <div class="sepet-alani">
+            <div id="sepet-icerik"></div>
+            <p id="sepet-toplam" class="sepet-toplam"></p>
+            <div class="sepet-butonlar">
+                <button id="sepet-temizle">Sepeti Boşalt</button>
+                <button id="sepet-onayla">Siparişi Onayla</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 KutuDünyası | Tüm hakları saklıdır.</p>
+        <p>Tel: 0545 933 2971 &nbsp;|&nbsp; iletisim@kutudünyasi.com</p>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html>

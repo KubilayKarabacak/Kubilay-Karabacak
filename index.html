@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KutuDünyası - Kutu Oyunları</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">KutuDünyası</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+            <li><a href="pages/urunler.html">Ürünler</a></li>
+            <li><a href="pages/iletisim.html">İletişim</a></li>
+            <li><a href="pages/sepet.html">Sepet (<span id="sepet-sayisi">0</span>)</a></li>
+        </ul>
+        <button class="hamburger">&#9776;</button>
+    </nav>
+
+    <div class="hero">
+        <h1>Kutu Oyunlarının Adresi</h1>
+        <p>Aile, arkadaş ve strateji oyunlarında en geniş seçim</p>
+        <a href="pages/urunler.html" class="btn">Ürünlere Bak</a>
+    </div>
+
+    <section>
+        <h2>Öne Çıkan Ürünler</h2>
+        <div class="urun-grid">
+            <div class="urun-kart">
+                <img src="images/catan.jpg" alt="Catan">
+                <h3>Catan</h3>
+                <p class="fiyat">350 TL</p>
+                <a href="pages/urun-detay.html" class="detay-link">Detayları Gör</a>
+                <button class="sepete-ekle" data-isim="Catan" data-fiyat="350">Sepete Ekle</button>
+            </div>
+            <div class="urun-kart">
+                <img src="images/monopoly.jpg" alt="Monopoly">
+                <h3>Monopoly</h3>
+                <p class="fiyat">250 TL</p>
+                <a href="pages/urunler.html" class="detay-link">Detayları Gör</a>
+                <button class="sepete-ekle" data-isim="Monopoly" data-fiyat="250">Sepete Ekle</button>
+            </div>
+            <div class="urun-kart">
+                <img src="images/risk.jpg" alt="Risk">
+                <h3>Risk</h3>
+                <p class="fiyat">300 TL</p>
+                <a href="pages/urunler.html" class="detay-link">Detayları Gör</a>
+                <button class="sepete-ekle" data-isim="Risk" data-fiyat="300">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="ozet-bolum">
+        <h2>Neden KutuDünyası?</h2>
+        <div class="ozet-grid">
+            <div class="ozet-kutu">
+                <h3>50+</h3>
+                <p>Farklı oyun çeşidi</p>
+            </div>
+            <div class="ozet-kutu">
+                <h3>Hızlı</h3>
+                <p>Kargo 2-3 iş günü</p>
+            </div>
+            <div class="ozet-kutu">
+                <h3>Güvenli</h3>
+                <p>Orijinal ürün garantisi</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz-bolum">
+        <h2>Hangi Oyun Sana Göre?</h2>
+        <div class="quiz-alani">
+            <div id="soru-0" class="soru">
+                <p>Kaç kişiyle oynayacaksınız?</p>
+                <button class="quiz-btn" data-soru="0" data-cevap="az">2 Kişi</button>
+                <button class="quiz-btn" data-soru="0" data-cevap="orta">3-4 Kişi</button>
+                <button class="quiz-btn" data-soru="0" data-cevap="fazla">5 veya daha fazla</button>
+            </div>
+            <div id="soru-1" class="soru gizli">
+                <p>Ne kadar süre oynamak istiyorsunuz?</p>
+                <button class="quiz-btn" data-soru="1" data-cevap="kisa">30 dakika</button>
+                <button class="quiz-btn" data-soru="1" data-cevap="orta">1 saat</button>
+                <button class="quiz-btn" data-soru="1" data-cevap="uzun">2 saat veya daha fazla</button>
+            </div>
+            <div id="soru-2" class="soru gizli">
+                <p>Hangi tür oyunları tercih edersiniz?</p>
+                <button class="quiz-btn" data-soru="2" data-cevap="strateji">Strateji</button>
+                <button class="quiz-btn" data-soru="2" data-cevap="kelime">Kelime</button>
+                <button class="quiz-btn" data-soru="2" data-cevap="aile">Aile Eğlencesi</button>
+            </div>
+            <div id="sonuc" class="gizli">
+                <p id="tavsiye-metni"></p>
+                <button id="quiz-sifirla">Tekrar Dene</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 KutuDünyası | Tüm hakları saklıdır.</p>
+        <p>Tel: 0545 933 2971 &nbsp;|&nbsp; iletisim@kutudünyasi.com</p>
+    </footer>
+
+    <script src="scripts/myscript.js"></script>
+</body>
+</html>

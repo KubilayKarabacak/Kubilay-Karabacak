@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-logo {
+    color: #e8b04b;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.nav-links a:hover,
+.nav-links a.aktif {
+    color: #e8b04b;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hero {
+    background-color: #16213e;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #bbb;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #e8b04b;
+    color: #1a1a2e;
+    padding: 11px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d4a03a;
+}
+
+section {
+    padding: 40px 30px;
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #1a1a2e;
+}
+
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.urun-kart {
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.urun-kart img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    background-color: #c8c8c8;
+}
+
+.urun-kart h3 {
+    margin: 10px 0 5px;
+    font-size: 17px;
+    padding: 0 10px;
+}
+
+.urun-kart .fiyat {
+    color: #e8b04b;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.urun-kart .detay-link {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.urun-kart .detay-link:hover {
+    color: #1a1a2e;
+}
+
+.urun-kart button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 13px;
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.urun-kart button:hover {
+    background-color: #e8b04b;
+    color: #1a1a2e;
+}
+
+.ozet-bolum {
+    background-color: #eef0f5;
+}
+
+.ozet-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ozet-kutu {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 25px 30px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.ozet-kutu h3 {
+    font-size: 32px;
+    color: #e8b04b;
+    margin-bottom: 5px;
+}
+
+.ozet-kutu p {
+    color: #555;
+    font-size: 14px;
+}
+
+.quiz-bolum {
+    background-color: #f9f5ec;
+}
+
+.quiz-alani {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.soru p {
+    font-size: 17px;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+.soru button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.soru button:hover {
+    background-color: #e8b04b;
+    color: #1a1a2e;
+}
+
+.gizli {
+    display: none;
+}
+
+#sonuc p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+#sonuc button {
+    background-color: #e8b04b;
+    color: #1a1a2e;
+    border: none;
+    padding: 9px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.urun-detay-alani {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.urun-detay-alani img {
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+    background-color: #c8c8c8;
+    flex-shrink: 0;
+}
+
+.urun-detay-bilgi h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.urun-detay-bilgi .fiyat {
+    font-size: 22px;
+    color: #e8b04b;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.urun-detay-bilgi p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.urun-detay-bilgi ul {
+    margin: 10px 0 15px 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.sepet-alani {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.sepet-tablo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sepet-tablo th,
+.sepet-tablo td {
+    border: 1px solid #ddd;
+    padding: 11px 14px;
+    text-align: left;
+}
+
+.sepet-tablo th {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+.sepet-tablo tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.sil-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.sil-btn:hover {
+    background-color: #a93226;
+}
+
+.sepet-toplam {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.sepet-butonlar {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.sepet-butonlar button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#sepet-temizle {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+#sepet-onayla {
+    background-color: #27ae60;
+    color: white;
+}
+
+.sepet-bos {
+    text-align: center;
+    padding: 50px 20px;
+    color: #888;
+    font-size: 17px;
+}
+
+.iletisim-wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.iletisim-wrapper label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.iletisim-wrapper input,
+.iletisim-wrapper select,
+.iletisim-wrapper textarea {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.iletisim-wrapper textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+
